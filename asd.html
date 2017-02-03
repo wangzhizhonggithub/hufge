@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>移动端布局解决bug</title>
+  <meta  name="viewport"   content="width=device-width,initial-scale=1.0,user-scalable=no">
+  <script type="text/javascript" src="js/zepto.js"></script>
+  <script type="text/javascript" src="js/zepto-touch.js"></script>
+ <script type="text/javascript" src="js/rem.js"></script>
+
+
+  <style>
+        *{margin: 0;padding:0;}
+        html,body,.box{width:100%;height:100%;}
+        ul,li{list-style: none}
+        body{font-size:16px;}
+        .header{width:100%;height:26%; background: url("img/head.png") no-repeat;background-size: 100% 100%;}
+        .logo{height:32% }
+        .logo ul{width:100%;height:100%;;overflow: hidden;}
+        .logo ul li{width: 33.33%;height:50%;float:left;text-align: center;}
+        .logo ul li img{width:44px;height:44px;
+          background-size:100% 100%;
+          margin-top:0.1rem;margin-bottom: 0.14rem;
+        }
+        .logo ul li p{font-size:14px;margin-bottom: 0.1rem}
+        .content{height:18%;background:#cdcdcd;position: relative;}
+        .contenta{height:1.6rem;position: absolute;left:0;right:0;bottom:0;background:white;
+        margin:auto;
+          top:0;}
+          .cd{width:5.6rem;height:0.8rem;background:#47379a;text-align: center;line-height:0.8rem;color:white;position: absolute;left:50%;top:50%;margin-left:-2.8rem;margin-top:-0.4rem;}
+          .selection{height:16%;overflow: hidden; }
+          .vf,.hu{height:100%;width:50%;float:left;display: -webkit-box;display:flex;-webkit-align-items: center;display: box;
+             align-items: center; -webkit-justify-content: center;
+              justify-content: center;}
+             .left,.right{overflow: hidden;}
+          .left img{float: left;width:0.56rem;height:0.60rem;}
+          .left p{float: left;line-height:0.60rem;}
+           .right img{float: left;width:0.56rem;height:0.60rem;}
+          .right p{float: left;line-height:0.60rem;}
+
+          .footer{height:8%;background: black;overflow: hidden;}
+        .footer ul{overflow: hidden;}
+          .footer ul li{float:left;width:25%;text-align: center;margin-top:0.2rem;}
+          .footer ul li img{height:0.34rem;width:0.38rem;}
+          .footer ul li span{color:white;line-height:0.30rem;}
+  </style>
+</head>
+<body>
+  <div class="box">
+          <div class="header"></div>
+          <div class="logo">
+            <ul>
+              <li><img src="img/b1.png"   alt=""> <p>注册经纪人</p></li>
+              <li><img src="img/b2.png"   alt=""><p>我要推荐</p></li>
+              <li><img src="img/b3.png"   alt=""><p>我的客户</p></li>
+              <li><img src="img/b4.png"   alt=""><p>营销规则</p></li>
+           <li><img src="img/b5.png"   alt=""><p>我的佣金</p></li>
+           <li><img src="img/b6.png"   alt=""><p>我的联系</p></li>
+            </ul>
+          </div>
+          <div class="content">
+            <div class="contenta">
+                  <div class="cd">邀请好友ret</div>
+            </div>
+          </div>
+          <div class="selection">
+          <div class="vf">
+            <div class="left">
+              <img src="img/twoL.jpg"  alt=""><p>为楼房</p>
+            </div>
+            </div>
+            <div class="hu">
+            <div class="right">  <img src="img/twoR.jpg"   alt=""><p>为楼房</p></div></div>
+          </div>
+          <div class="footer">
+            <ul>
+              <li><img src="img/b9.jpg"  alt=""><span>首页</span></li>
+              <li><img src="img/b10.jpg"  alt=""><span>首页</span></li>
+              <li><img src="img/b9.jpg"  alt=""><span>首页</span></li>
+              <li><img src="img/b10.jpg"  alt=""><span>首页</span></li>
+            </ul>
+          </div>
+  </div>
+</body>
+</html>
